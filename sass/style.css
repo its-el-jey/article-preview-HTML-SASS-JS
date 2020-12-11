@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope";
+  background-color: #ecf2f8;
+}
+
+p {
+  font-size: 13px;
+}
+
+.card {
+  max-width: 350px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card .cover img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card .content .content-txt {
+  padding: 0 2rem;
+}
+
+.card .content .content-txt h3 {
+  color: #48556a;
+}
+
+.card .content .content-txt p {
+  color: #9eafc2;
+}
+
+.card .content .author {
+  padding: 0 0 0 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+}
+
+.card .content .author img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.card .content .author .author-info .name {
+  font-weight: 700;
+  color: #48556a;
+}
+
+.card .content .author .author-info .date {
+  color: #9eafc2;
+}
+
+.card .share-info {
+  padding: 0 2rem;
+  background-color: #48556a;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  position: absolute;
+  bottom: 0%;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+
+.card .share-info p {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #9eafc2;
+}
+
+.card .share-info img {
+  height: 20px;
+  margin-left: 1rem;
+}
+
+.card .hidden {
+  display: none;
+}
+
+.card .share {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  background: #ecf2f8;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card .share-icon-active {
+  background: #9eafc2;
+}
+
+.card .share-btn path {
+  fill: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 700px;
+  }
+  .card .cover img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .card .share-info {
+    border-radius: 0.5rem;
+    width: 270px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: -90px;
+    bottom: 90px;
+  }
+  .card .share-info ::after {
+    position: absolute;
+    content: "";
+    bottom: -35px;
+    left: 50%;
+    border: 20px solid transparent;
+    border-top-color: #48556a;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: 20px;
+  }
+  .card .hidden {
+    display: none;
+  }
+  .card .share-icon-active {
+    background: #6d7f97;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
